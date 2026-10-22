@@ -1,10 +1,10 @@
 # Prompt user to give an x and y value // int() will always return a whole number i.e. int(3.9) -> 3
-"""x = int(input("What's x? "))"""
+"""x = int(input("What's x? "))
 
 # % is the modulo operator: it returns the remainder after division.
 # Example: 7 % 2 = 1 (7 = 3*2 + 1), while 8 % 2 = 0 (8 divides evenly).
 # If x % 2 == 0, there is no remainder, so x is even.
-"""if x % 2 == 0:
+if x % 2 == 0:
     print("Even")
 if x % 2 == 0:
     print("Even")
