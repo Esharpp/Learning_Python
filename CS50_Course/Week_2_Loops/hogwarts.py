@@ -21,7 +21,7 @@ for student in students:
 # After the last item ("Ron") has been printed, the list has run out,
 # so the loop ends and the program finishes."""
 
-# This program prints each student's name with a number in front of it,
+"""# This program prints each student's name with a number in front of it,
 # starting from 1 (a numbered list).
 students = ["Hermione", "Harry", "Ron"]
 # CHANGED: the loop now uses positions (indexes) instead of the names directly.
@@ -34,4 +34,40 @@ for i in range(len(students)):
     #                   (indexes start at 0, but people count from 1)
     #   students[i]  -> the name stored at position i in the list
     # When print() gets several values, it puts a single space between them.
-    print(i + 1, students[i])
+    print(i + 1, students[i])"""
+
+"""# Create a dictionary that maps each student's name (key) to their Hogwarts house (value)
+students = {
+    "Hermione": "Gryffindor",
+    "Harry": "Gryffindor",
+    "Ron": "Gryffindor",
+    "Draco": "Slytherin",
+}
+# Loop over the dictionary. Iterating over a dictionary directly gives you its keys,
+# so on each pass `student` holds a name: "Hermione", then "Harry", and so on
+# (dictionaries keep insertion order in Python 3.7+)
+for student in students:
+    # Look up the house for the current name using students[student],
+    # then print both values on one line.
+    # sep=", " sets the separator between the printed items to a comma and space,
+    # instead of the default single space
+    print(student, students[student], sep=", ")"""
+
+"""# Create a list of dictionaries. Each dictionary holds the details for one student:
+# their name, their Hogwarts house, and their patronus
+# (None is Python's way of saying "no value", used here because Draco has no patronus listed)
+students = [
+    {"name": "Hermione", "house": "Gryffindor", "patronus": "Otter"},
+    {"name": "Harry", "house": "Gryffindor", "patronus": "Stag"},
+    {"name": "Ron", "house": "Gryffindor", "patronus": "Jack Russell Terrier"},
+    {"name": "Draco", "house": "Gryffindor", "patronus": None}
+]
+
+# Loop over the list. On each pass, `student` is one whole dictionary,
+# e.g. {"name": "Hermione", "house": "Gryffindor", "patronus": "Otter"}
+for student in students:
+    # Look up each value by its key, e.g. student["name"], then print them on one line.
+    # Note the print order is name, patronus, house (not the order stored in the dictionary).
+    # sep=", " puts a comma and space between the printed items
+    print(student["name"], student["patronus"], student["house"], sep=", ")"""
+
