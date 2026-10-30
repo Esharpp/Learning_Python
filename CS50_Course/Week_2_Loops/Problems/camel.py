@@ -8,3 +8,18 @@
 # In a file called camel.py, implement a program that prompts the user for the name of a variable in camel case and outputs the corresponding name in snake case.
 # Assume that the user’s input will indeed be in camel case.
 
+# Ask the user for a variable name written in camel case (e.g. preferredFirstName)
+camelCase = input("What is your name? ")
+# Start with an empty string; we'll build the snake case version in here
+snake = ""
+# Go through the input one character at a time, from left to right
+for letter in camelCase:
+    # An uppercase letter means a new word is starting (the "F" in preferredFirstName)
+    if letter.isupper():
+        # So add an underscore before it to separate the words // snake += letter is exactly the same as snake = snake + letter
+        snake += "_"
+    # Add the current letter itself to the result (uppercase or not)
+    snake += letter
+
+# At this point snake is "preferred_First_Name", so make everything lowercase
+print(snake.lower())
