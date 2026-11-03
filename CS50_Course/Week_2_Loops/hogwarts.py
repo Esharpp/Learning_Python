@@ -53,7 +53,7 @@ for student in students:
     # instead of the default single space
     print(student, students[student], sep=", ")"""
 
-"""# Create a list of dictionaries. Each dictionary holds the details for one student:
+# Create a list of dictionaries. Each dictionary holds the details for one student:
 # their name, their Hogwarts house, and their patronus
 # (None is Python's way of saying "no value", used here because Draco has no patronus listed)
 students = [
@@ -69,5 +69,5 @@ for student in students:
     # Look up each value by its key, e.g. student["name"], then print them on one line.
     # Note the print order is name, patronus, house (not the order stored in the dictionary).
     # sep=", " puts a comma and space between the printed items
-    print(student["name"], student["patronus"], student["house"], sep=", ")"""
+    print(student["name"], student["patronus"], student["house"], sep=", ")
 
