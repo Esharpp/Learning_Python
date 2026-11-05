@@ -20,3 +20,5 @@ V0.7 End of week 2 lesson
 
 V0.8 Week 2 problem sets 1/2/3/beginning of 4
 
+V0.9 Start of Week 3 lesson
+
